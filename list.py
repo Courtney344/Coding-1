@@ -241,7 +241,6 @@ print("Our youngest reader is " + str(youngest) + " years old.")
 print("Our oldest reader is " + str(oldest) + " years old.")
 print("Together, we have " + str(total_years) + " years worth of life experience.")
 
-squares []
 
 for number in range(1,11):
     new_square = number**2
