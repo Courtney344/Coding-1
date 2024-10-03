@@ -241,6 +241,7 @@ print("Our youngest reader is " + str(youngest) + " years old.")
 print("Our oldest reader is " + str(oldest) + " years old.")
 print("Together, we have " + str(total_years) + " years worth of life experience.")
 
+squares = []
 
 for number in range(1,11):
     new_square = number**2
@@ -248,3 +249,128 @@ for number in range(1,11):
 
 for square in squares:
     print(square)
+
+squares = []
+
+for number in range(1,11):
+    squares.append(number**2)
+    
+for square in squares:
+    print(square)
+
+squares = [number**2 for number in range(1,11)]
+
+for square in squares:
+    print(square)
+
+
+students = ['bernice', 'aaron', 'cody']
+
+great_students = []
+for student in students:
+    great_students.append(student.title() + " the great!")
+
+for great_student in great_students:
+    print("Hello, " + great_student)
+
+#Pratice exercise 
+students = ['bernice', 'aaron', 'cody', 'lexi', 'ava']
+
+great_students = []
+for student in students:
+    great_students.append(student.title() + " is awesome!")
+
+for great_student in great_students:
+    print("Hello, " + great_student)
+
+
+
+message = "Hello!"
+
+for letter in message:
+    print(letter)
+
+message = "Hello world!"
+
+message_list = list(message)
+print(message_list)
+
+message = "Hello World!"
+first_char = message[0]
+last_char = message[-1]
+
+print(first_char, last_char)
+
+message = "Hello World!"
+first_three = message[:3]
+last_three = message[-3:]
+
+print(first_three, last_three)
+
+message = "I like cats and dogs."
+dog_present = 'dog' in message
+print(dog_present)
+
+message = "I like cats and dogs."
+dog_index = message.find('dog')
+print(dog_index)
+
+message = "I like cats and dogs, but I'd much rather own a dog."
+dog_index = message.find('dog')
+print(dog_index)
+
+message = "I like cats and dogs, but I'd much rather own a dog."
+last_dog_index = message.rfind('dog')
+print(last_dog_index)
+
+message = "I like cats and dogs, but I'd much rather own a dog."
+message = message.replace('dog', 'snake')
+print(message)
+
+message = "I like cats and dogs, but I'd much rather own a dog."
+words = message.split(' ')
+print(words)
+
+animals = "dog, cat, tiger, mouse, liger, bear"
+
+animals = animals.split(',')
+print(animals)
+
+
+#TULPES
+
+colors = ('red', 'green', 'blue')
+print("The first color is: " + colors[0])
+
+print("\nThe available colors are:")
+for color in colors:
+    print("- " + color)
+
+animal = 'dog'
+print("I have a " + animal + ".")
+
+animals = ['dog', 'cat', 'bear']
+for animal in animals:
+    print("I have a " + animal + ".")
+
+animal = 'dog'
+print("I have a %s." % animal)
+
+animals = ['dog', 'cat', 'bear']
+print("I have a %s, a %s, and a %s." % (animals[0], animals[1], animals[2]))
+
+number = 23
+print("My favorite number is " + str(number) + ".")
+
+number = 23
+print("My favorite number is %d." % number)
+
+numbers = [7, 23, 42]
+print("My favorite numbers are %d, %d, and %d." % (numbers[0], numbers[1], numbers[2]))
+
+numbers = [7, 23, 42]
+print("My favorite numbers are " + str(numbers[0]) + ", " + str(numbers[1]) + ", and " + str(numbers[2]) + ".")
+
+names = ['eric', 'ever']
+numbers = [23, 2]
+print("%s's favorite number is %d, and %s's favorite number is %d." % (names[0].title(), numbers[0], names[1].title(), numbers[1]))
