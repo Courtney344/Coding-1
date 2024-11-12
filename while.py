@@ -1,6 +1,5 @@
 game_active = True
 
-
 while game_active:
     # Run the game.
     # At some point, the game ends and game_active will be set to False.
