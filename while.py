@@ -17,3 +17,4 @@ while power > 0:
 print("\nOh no, your power dropped to 0! Game Over.")
 
 variable = input '5'(Please enter a value: '5')
+
